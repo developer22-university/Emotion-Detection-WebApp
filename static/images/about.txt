@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Intro - login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+<style>
+.main { 
+        text-align:center; 
+        font-family:"Times New Roman"; 
+text-decoration:underline;
+
+    } 
+.m{
+        padding-top:10px; 
+        padding-bottom:10px; 
+}
+.id{
+text-aligh:center;
+       font-size:36px; 
+        font-weight:bold; 
+        color:red; 
+        text-align:center;
+}
+.work{
+  text-align:center;
+       font-size:21px; 
+        font-weight:bold; 
+        color:red; 
+        text-align:center; 
+   
+}
+.r{
+color:white;
+text-decoration:underline;
+}
+.m{
+color:white;
+}
+#header{
+text-align:center;
+       font-size:21px; 
+        font-weight:bold; 
+        color:red; 
+        text-align:center;
+        text-decoration:underline;
+}
+</style>
+  <body>
+    <img src="C:\Users\RADHE KRISHNA\Downloads\emotion\emotion\templates\bac1.jpg">
+<div class="main" align="center">
+<marquee 
+ 
+     direction="right"
+     loop="20"
+     scrollamount="5"
+     scrolldelay="3"
+     behavior="alternate"
+     direction="up"
+     width="100%"
+     bgcolor="Green"
+     >
+<div class="r" >
+ <h1>GUESS YOUR EMOTION</h1>
+</div>
+</marquee>
+
+<div id="header" class="page">
+	<h1>About Our project</h1>
+<center><h2>The tools and languages we worked with <h2></center>
+</div>
+
+<div id="work" align="left" class="page">
+<div class="m" align="center">
+ <marquee 
+ 
+     direction="down"
+     loop="25"
+     scrollamount="5"
+     scrolldelay="3"
+     behavior="scroll"
+     width="60%"
+     height="20%"
+     bgcolor="Blue"
+     >
+ <div class="e"><h1>Languages</h1></div>
+ 
+</marquee>
+</div>
+<ol>
+<h3>
+<li>Python 3.0</li>
+<li>Flask-Webframework</li>
+<li>HTML-MARKUP language</li>
+<li>CSS-Stylesheet </li>
+<li>Bootstrap</li> 
+<li>Java-script</li>
+</ol>
+<div class="m" align=center>
+<marquee 
+ 
+     direction="up"
+     loop="12"
+     height="20%"
+     scrollamount="5"
+     scrolldelay="3"
+     behavior="scroll"
+     width="60%"
+     bgcolor="Blue"
+     >
+ <h1>Tools</h1>
+ <br>
+</marquee>
+</div>
+<ol>
+<h3>
+<li>OPENCV</li>
+<li>HaarCascade Classifier</li>
+<li>Keras-Precprocessing Dataset</li>
+<li>jinja 2.0</li>
+<li>Several other packages</li>
+</h3>
+</ol>
+</h1>
+</ul>
+</div>
+</div>
+
+</body>
+</html>

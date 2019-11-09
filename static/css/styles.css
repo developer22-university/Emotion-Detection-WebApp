@@ -1,0 +1,1052 @@
+/*  Document     : Obri
+    Author       : Chibuu
+    Description  : App Landing Page HTML Template
+    Version      : V1.0
+*/
+/*=====================================
+=============TABLE OF CONTENT==========
+=======================================
+01 Body
+02 Fonts
+03 Buttons
+04 Gotop
+05 Preloader
+06 Owl Carousel Slider
+07 Tabs
+08 Navigation
+09 Animation Keyframes
+10 Modal Video Header
+11 Sticky Header
+12 Header
+13 Banner
+14 Banner Style Two
+15 About
+16 Features
+17 Works
+18 App
+19 Testimonials
+20 Support
+21 Download
+22 Subscribe
+23 Contact
+24 Footer
+======================================*/
+@charset "utf-8";
+
+/*==================== 01 Body ====================*/
+html {
+  overflow-y: scroll;
+}
+body {
+  color: #363636;
+  font-family: 'Gilroy-ExtraBold';
+  font-weight: 400;
+  font-size: 14px;
+  text-rendering: auto;
+  line-height: 1.42857143;
+  -webkit-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: grayscale;
+}
+::-webkit-input-placeholder {
+  color: #4f4f4f;
+  opacity: 0.5;
+}
+::-moz-placeholder {
+  color: #4f4f4f;
+  opacity: 0.5;
+}
+:-ms-input-placeholder {
+  color: #4f4f4f;
+  opacity: 0.5;
+}
+:-moz-placeholder {
+  color: #4f4f4f;
+  opacity: 0.5;
+}
+::selection {
+  background: #2a43b3;
+  color: #ffffff;
+}
+::-webkit-selection {
+  background: #2a43b3;
+  color: #ffffff;
+}
+::-moz-selection {
+  background: #2a43b3;
+  color: #ffffff;
+}
+::-o-selection {
+  background: #2a43b3;
+  color: #ffffff;
+}
+::-ms-selection {
+  background: #2a43b3;
+  color: #ffffff;
+}
+a {
+  color: #363636;
+  -webkit-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  transition: all ease .3s;
+}
+a:focus {
+  outline: none;
+  outline-offset: 0;
+}
+a:hover, a:focus {
+  color: #2a43b3;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+iframe {
+  display: block;
+  width: 100%;
+  border: none;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  padding-bottom: 10px;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.42857143;
+}
+p {
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  color: #777777;
+  font-family: 'Roboto', sans-serif;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+}
+video {
+  display: block;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  background-color: #f8f8f8;
+}
+audio, canvas, progress, video {
+  vertical-align: middle;
+}
+.obri-table-wrap {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.obri-align-wrap {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+.text-italic {
+  font-style: italic;
+}
+.textright {
+  text-align: right;
+}
+.textcenter {
+  text-align: center;
+}
+
+/*==================== 02 Fonts ====================*/
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url('../fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),  
+       url('../fonts/Gilroy-ExtraBold.otf')  format('opentype'),
+       url('../fonts/Gilroy-ExtraBold.woff') format('woff'), 
+       url('../fonts/Gilroy-ExtraBold.ttf')  format('truetype'), 
+       url('../fonts/Gilroy-ExtraBold.svg#Gilroy-ExtraBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('../fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),  
+       url('../fonts/Gilroy-Light.otf')  format('opentype'),
+       url('../fonts/Gilroy-Light.woff') format('woff'), 
+       url('../fonts/Gilroy-Light.ttf')  format('truetype'), 
+       url('../fonts/Gilroy-Light.svg#Gilroy-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*==================== 03 Buttons ====================*/
+.obri-btn {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 190px;
+  padding: 16px 15px;
+  background: #3761fb;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  transition: all ease .3s;
+}
+.obri-btn:hover, .obri-btn:focus {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+/*==================== 04 Gotop ====================*/
+.obri-gotop {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  -webkit-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  transition: all ease .5s;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  z-index: 2;
+}
+.obri-gotop.active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.obri-gotop a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  background: #2a43b3;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+}
+.obri-gotop a:hover, .obri-gotop a:focus {
+  opacity: 0.8;
+}
+
+/*==================== 05 Preloader ====================*/
+.obri-preloader {
+  display: table;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2a43b3;
+  text-align: center;
+  z-index: 4;
+}
+.loader-wrap {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+.loader {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*==================== 06 Owl Carousel Slider ====================*/
+.owl-carousel .owl-prev, .owl-carousel .owl-next, .owl-carousel .owl-dot {
+  cursor: pointer;
+}
+.owl-drag .owl-prev:before, .owl-drag .owl-next:before {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 20px;
+  height: 35px;
+  background-image: url(../images/icon9@1x.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 20px auto;
+  content: "";
+  -webkit-transition: all ease .4s;
+  -ms-transition: all ease .4s;
+  transition: all ease .4s;
+  -webkit-transform: translateY(-30%);
+  -ms-transform: translateY(-30%);
+  transform: translateY(-30%);
+  z-index: 1;
+}
+.owl-drag .owl-prev:hover:before {
+  background-image: url(../images/icon11@1x.png);
+}
+.owl-drag .owl-next:before {
+  left: auto;
+  right: 0;
+  background-image: url(../images/icon10@1x.png);
+}
+.owl-drag .owl-next:hover:before {
+  background-image: url(../images/icon12@1x.png);
+}
+.owl-drag .disabled {
+  display: none;
+}
+.owl-carousel .owl-dots {
+  padding-top: 52px;
+  text-align: center;
+}
+.owl-carousel .owl-dot {
+  display: inline-block;
+  vertical-align: middle;
+  width: 7px;
+  height: 7px;
+  margin: 0 5px 0 4px;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  text-indent: -999px;
+  -webkit-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-transition: all ease .4s;
+  -ms-transition: all ease .4s;
+  transition: all ease .4s;
+}
+.owl-carousel .owl-dot.active {
+  width: 25px;
+  background: #ffbb00;
+}
+.slider-no-current {
+  display: none;
+  padding-top: 46px;
+}
+.current-no:after {
+  content: "/"
+}
+
+/*==================== 07 Tabs ====================*/
+.obri-tabs {
+  max-width: 400px;
+  padding-top: 25px;
+}
+.nav-tabs {
+  border-bottom: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+.nav-tabs .obri-icon {
+  display: block;
+  padding-bottom: 10px;
+}
+.nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+.nav-tabs .nav-link {
+  padding: 25px 20px;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  position: relative;
+}
+.nav-tabs .nav-link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background: #2a43b3;
+  content: "";
+  -webkit-transition: all ease .6s;
+  -ms-transition: all ease .6s;
+  transition: all ease .6s;
+  z-index: 1;
+}
+.nav-tabs .nav-link.active {
+  box-shadow: 0 0 20px rgba(34, 34, 34, 0.13);
+}
+.nav-tabs .nav-link.active:after {
+  width: 100%;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active, .nav-tabs .nav-link {
+  border: none;
+}
+.tab-content .obri-image {
+  text-align: center;
+}
+
+/*==================== 08 Navigation ====================*/
+.obri-navigation ul {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  list-style: none;
+  letter-spacing: 0.5px;
+}
+.obri-navigation ul li {
+  display: inline-block;
+  padding-left: 23px;
+}
+.obri-navigation ul li a {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 4px;
+  color: #ffffff;
+  position: relative;
+}
+.obri-navigation ul li a:after {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #fba43f;
+  content: "";
+  -webkit-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  transition: all ease .3s;
+  z-index: 1;
+}
+.obri-navigation ul li a:hover:after, .obri-navigation ul li a.mPS2id-highlight:after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+/*==================== 09 Animation Keyframes ====================*/
+@-webkit-keyframes pulse-front {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: scale(1.5, 1.5);
+    -ms-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(3.0, 3.0);
+    -ms-transform: scale(3.0, 3.0);
+    transform: scale(3.0, 3.0);
+  }
+}
+@keyframes pulse-front {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: scale(1.5, 1.5);
+    -ms-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(3.0, 3.0);
+    -ms-transform: scale(3.0, 3.0);
+    transform: scale(3.0, 3.0);
+  }
+}
+
+/*==================== 10 Modal Video Header ====================*/
+.modal-video .modal-content {
+  border: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.modal-video .modal-body {
+  padding: 0;
+}
+
+/*==================== 11 Sticky Header ====================*/
+/*  */
+.is-sticky .obri-header {
+  padding: 40px 0;
+  background: #1b1b1b;
+  -webkit-box-shadow: 0 2px 4px rgba(27, 27, 27, 0.1);
+  -ms-box-shadow: 0 2px 4px rgba(27, 27, 27, 0.1);
+  box-shadow: 0 2px 4px rgba(27, 27, 27, 0.1);
+}
+.sticky-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+/*==================== 12 Header ====================*/
+.obri-header {
+  padding: 65px 0;
+  position: relative;
+  -webkit-transition: padding ease .4s, background ease .4s, box-shadow ease .4s;
+  -ms-transition: padding ease .4s, background ease .4s, box-shadow ease .4s;
+  transition: padding ease .4s, background ease .4s, box-shadow ease .4s;
+}
+.obri-header [class*="col-"] {
+  position: static;
+}
+.header-right {
+  text-align: right;
+}
+.obri-toggle {
+  display: none;
+  vertical-align: middle;
+  width: 20px;
+  height: 14px;
+}
+.obri-toggle .toggle-separator {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 5px;
+  background: #ffffff;
+  position: relative;
+  -webkit-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  transition: all ease .3s;
+}
+.obri-toggle .toggle-separator:before, .obri-toggle .toggle-separator:after {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  content: "";
+  -webkit-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  transition: all ease .3s;
+  z-index: 1;
+}
+.obri-toggle .toggle-separator:after {
+  top: 6px;
+}
+.obri-toggle.active .toggle-separator {
+  background: none;
+}
+.obri-toggle.active .toggle-separator:before {
+  top: -6px;
+  -webkit-transform: translateY(7px) rotateZ(-45deg);
+  -ms-transform: translateY(7px) rotateZ(-45deg);
+  transform: translateY(7px) rotateZ(-45deg)
+}
+.obri-toggle.active .toggle-separator:after {
+  top: 6px;
+  -webkit-transform: translateY(-5px) rotateZ(45deg);
+  -ms-transform: translateY(-5px) rotateZ(45deg);
+  transform: translateY(-5px) rotateZ(45deg)
+}
+
+/*==================== 13 er ====================*/
+.obri-banner {
+  height: 960px;
+  padding-top: 225px;
+  background-image: url(../images/background1.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.obri-banner [class*="col-"] {
+  position: static;
+}
+.obri-banner .container {
+  position: relative;
+}
+.banner-caption {
+  padding-top: 120px;
+  color: #ffffff;
+}
+.banner-caption h1 {
+  font-family: 'Gilroy-ExtraBold';
+  font-size: 90px;
+  line-height: 90px;
+}
+.banner-caption p {
+  font-weight: 300;
+  font-size: 20px;
+  color: inherit;
+}
+.caption-title {
+  padding-bottom: 18px;
+}
+.banner-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  z-index: 1;
+}
+.obri-video-btn {
+  padding: 20px 0 35px;
+}
+.app-btn a:hover {
+  opacity: 0.8;
+}
+.video-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  background: #ffffff;
+  font-size: 15px;
+  position: relative;
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  transition: all ease .3s;
+}
+.video-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+}
+.btn-text {
+  vertical-align: middle;
+  margin-left: 15px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/*==================== 14 Banner Style Two ====================*/
+.obri-banner.banner-style-two {
+  position: relative;
+  background: transparent;
+}
+.obri-banner.banner-style-two:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(42, 67, 179, 0.3);
+  content: "";
+  z-index: -1;
+}
+.banner-style-two .banner-caption {
+  position: relative;
+  z-index: 2;
+}
+.container-player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+
+/*==================== 15 About ====================*/
+.obri-about {
+  padding: 110px 0 60px;
+}
+.obri-about .section-title {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+.about-info {
+  padding-right: 30px;
+}
+.about-wrap {
+  max-width: 520px;
+  margin: 0 0 0 auto;
+}
+.about-wrap ul {
+  padding: 0;
+  margin: 0;
+  color: #777777;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+}
+.about-wrap ul:before, .about-wrap ul:after {
+  display: table;
+  content: "";
+}
+.about-wrap ul:after {
+  clear: both;
+}
+.about-wrap ul li {
+  float: left;
+  width: 50%;
+  padding-bottom: 13px;
+}
+.about-wrap ul li img {
+  margin-right: 10px;
+}
+.section-title {
+  padding-bottom: 20px;
+  margin-bottom: 45px;
+  text-align: center;
+  font-family: 'Gilroy-ExtraBold';
+  font-size: 50px;
+  line-height: 60px;
+  position: relative;
+}
+.section-title:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 70px;
+  height: 2px;
+  margin: 0 auto;
+  background: #fba43f;
+  content: "";
+  z-index: 1;
+}
+.section-title.title-two {
+  text-align: left;
+}
+.section-title.title-two:after {
+  left: -15px;
+  margin: 0;
+}
+
+/*==================== 16 Features ====================*/
+.obri-features {
+  padding: 60px 0 80px;
+  text-align: center;
+}
+.feature-item {
+  padding: 0 40px 20px;
+}
+.feature-item .obri-icon {
+  padding-bottom: 30px;
+}
+.feature-item h2 {
+  padding-bottom: 16px;
+  font-family: 'Gilroy-Light';
+  font-size: 30px;
+}
+
+/*==================== 17 Works ====================*/
+.obri-works {
+  padding: 100px 0 60px;
+  background: #2a43b3;
+  color: #ffffff;
+  text-align: center;
+}
+.work-item {
+  padding: 0 50px 25px;
+}
+.work-item .obri-icon {
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  padding: 10px;
+  margin-bottom: 25px;
+  background: #ffffff;
+  position: relative;
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+}
+.work-item h2 {
+  padding-bottom: 5px;
+  font-family: 'Gilroy-Light';
+  font-size: 30px;
+}
+.work-item p {
+  color: rgba(255, 255, 255, 0.6);
+}
+.work-step {
+  position: absolute;
+  top: 10px;
+  right: -15px;
+  padding: 4px 13px;
+  background: #00a6b2;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+/*==================== 18 App ====================*/
+.obri-app {
+  padding: 120px 0 30px;
+}
+.app-info {
+  padding-top: 30px;
+}
+.app-info .section-title {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 49px;
+}
+
+/*==================== 19 Testimonials ====================*/
+.obri-testimonials {
+  padding: 30px 0 50px;
+}
+.testimonial-item {
+  padding: 5px 40px;
+}
+.owl-item.center .testimonial-item {
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+}
+.testimonial-item .obri-icon {
+  float: left;
+  padding-top: 5px;
+}
+.testimonial-info {
+  overflow: hidden;
+  padding-left: 10px;
+}
+.testimonial-info p {
+  color: #4f4f4f;
+}
+.testimonial-author {
+  padding-top: 15px;
+}
+.testimonial-author .obri-image {
+  float: left;
+}
+.author-info {
+  overflow: hidden;
+  padding-left: 15px;
+}
+.author-info h6 {
+  padding-bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.author-info p {
+  font-size: 14px;
+}
+
+/*==================== 20 Support ====================*/
+.obri-support {
+  padding: 70px 0;
+}
+.obri-support .obri-icon {
+  text-align: center;
+}
+.support-info .section-title {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.support-info {
+  padding-right: 80px;
+}
+.support-info h4 {
+  font-size: 20px;
+}
+.support-info ul {
+  padding: 20px 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+}
+.support-info ul li {
+  padding: 0 0 10px 25px;
+  position: relative;
+}
+.support-info ul li:after {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background: #28bdab;
+  content: "";
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  z-index: 1;
+}
+.support-info ul li:nth-child(2n):after {
+  background: #f9a248;
+}
+.support-info ul li:nth-child(3n):after {
+  background: #9dce68;
+}
+
+/*==================== 21 Download ====================*/
+.obri-download {
+  padding: 80px 0 100px;
+}
+.obri-download .obri-image {
+  text-align: center;
+  position: relative;
+}
+.obri-download .obri-image:before, .obri-download .obri-image:after {
+  position: absolute;
+  top: 34%;
+  bottom: 34%;
+  left: 34%;
+  right: 34%;
+  background: rgba(0, 0, 0, 0.1);
+  content: "";
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-animation: 1.5s pulse-front 0s ease-out infinite;
+  -ms-animation: 1.5s pulse-front 0s ease-out infinite;
+  animation: 1.5s pulse-front 0s ease-out infinite;
+  z-index: 0;
+}
+.obri-download .obri-image:after {
+  -webkit-animation: 1.8s pulse-front 0s ease-out infinite;
+  -ms-animation: 1.8s pulse-front 0s ease-out infinite;
+  animation: 1.8s pulse-front 0s ease-out infinite;
+}
+.image-wrap {
+  position: relative;
+  z-index: 1;
+}
+.download-info {
+  padding-left: 50px;
+}
+.download-info .section-title {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.download-info .app-btn {
+  padding-top: 30px;
+}
+
+/*==================== 22 Subscribe ====================*/
+.obri-subscribe {
+  padding: 110px 0;
+  background-image: url(../images/background2.png);
+  background-position: 50% 50%;
+  background-repeat: repeat;
+  background-size: 10px auto;
+}
+.subscribe-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.subscribe-wrap .section-title {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  font-family: 'Gilroy-Light';
+}
+.subscribe-wrap form {
+  max-width: 400px;
+  padding-top: 25px;
+  margin: 0 auto;
+}
+.form-control {
+  height: 58px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  border-width: 2px;
+  border-color: #cacaca;
+}
+
+/*==================== 23 Contact ====================*/
+.obri-contact {
+  padding: 55px 0;
+}
+.contact-wrap .obri-icon {
+  float: left;
+}
+.contact-info {
+  overflow: hidden;
+  padding: 7px 0 0 15px;
+}
+.contact-info h5 {
+  padding-bottom: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.contact-info ul {
+  padding: 0;
+  margin: 0;
+  color: #3761fb;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+}
+.contact-info ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+.contact-info ul li a {
+  color: #3761fb;
+}
+.obri-contact .obri-social {
+  text-align: right;
+}
+.obri-social span {
+  display: block;
+  padding-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+.obri-social a {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+/*==================== 24 Footer ====================*/
+.obri-footer {
+  padding: 26px 0;
+  font-family: 'Roboto', sans-serif;
+  border-top: 1px solid #ebebeb;
+}
+.obri-footer a {
+  display: inline-block;
+  margin-left: 40px;
+  position: relative;
+}
+.obri-footer a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #cacaca;
+  content: "";
+  -webkit-transition: all ease .6s;
+  -ms-transition: all ease .6s;
+  transition: all ease .6s;
+  z-index: 1;
+}
+.obri-footer a:hover:after {
+  width: 0;
+}

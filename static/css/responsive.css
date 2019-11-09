@@ -1,0 +1,370 @@
+
+/*==================== Responsive CSS ====================*/
+@media screen and (min-width:1270px) {
+  .container {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+@media screen and (max-width:1340px) {
+  .banner-image img {
+    width: 380px;
+  }
+  .banner-caption h1 {
+    font-size: 75px;
+    line-height: 80px;
+  }
+  .about-info {
+    padding-right: 0;
+  }
+  .section-title {
+    font-size: 45px;
+    line-height: 52px;
+  }
+}
+
+@media screen and (max-width:1199px) {
+  .obri-banner {
+    height: 870px;
+    padding-top: 180px;
+  }
+  .banner-caption {
+    padding-top: 70px;
+  }
+  .banner-caption h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .feature-item, .work-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .download-info {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .obri-navigation {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 690px;
+    padding: 0 25px 25px;
+    margin: 0 auto;
+    background: #ffffff;
+    text-align: left;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  .obri-navigation ul {
+    font-size: 14px;
+  }
+  .obri-navigation ul li {
+    display: block;
+    padding-left: 0;
+  }
+  .obri-navigation ul li a {
+    display: block;
+    padding: 10px 0;
+    color: #363636;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .obri-navigation ul li a:after {
+    display: none;
+  }
+  .obri-toggle {
+    display: inline-block;
+  }
+  .obri-header, .is-sticky .obri-header {
+    padding: 30px 0;
+  }
+  .obri-banner {
+    height: auto;
+    padding-top: 150px;
+    text-align: center;
+  }
+  .banner-image {
+    padding-top: 50px;
+    margin-bottom: -70px;
+    position: static;
+  }
+  .banner-caption {
+    padding-top: 0;
+  }
+  .banner-caption h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .about-wrap {
+    max-width: none;
+    padding-top: 30px;
+    margin: 0;
+  }
+  .tab-content .obri-image {
+    padding-top: 50px;
+  }
+  .owl-item.center .testimonial-item {
+    border: none;
+  }
+  .testimonial-item {
+    padding: 0;
+  }
+  .obri-support .obri-icon {
+    padding-top: 50px;
+  }
+  .download-info .app-btn img {
+    width: 160px;
+  }
+  .section-title, .app-info .section-title {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .app-info {
+    padding-top: 0;
+  }
+  .support-info {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .obri-navigation {
+    width: 510px;
+  }
+  .obri-banner {
+    padding-top: 120px;
+  }
+  .banner-caption h1 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .banner-caption p {
+    font-size: 18px;
+  }
+  .caption-title {
+    padding-bottom: 10px;
+  }
+  .obri-video-btn {
+    padding: 15px 0 25px;
+  }
+  .banner-image {
+    margin-bottom: -30px;
+  }
+  .banner-image img {
+    width: 280px;
+  }
+  .obri-about .section-title, .app-info .section-title {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  .section-title.title-two:after {
+    left: 0;
+  }
+  .section-title {
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+  }
+  .section-title, .app-info .section-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .obri-about {
+    padding: 70px 0 30px;
+  }
+  .about-wrap {
+    padding-top: 15px;
+  }
+  .obri-features {
+    padding: 25px 0 20px;
+  }
+  .feature-item h2 {
+    font-size: 26px;
+  }
+  .feature-item .obri-icon {
+    padding-bottom: 15px;
+  }
+  .feature-item h2 {
+    padding-bottom: 10px;
+  }
+  .obri-works {
+    padding: 50px 0 25px;
+  }
+  .work-item h2 {
+    font-size: 26px;
+  }
+  .work-item .obri-icon {
+    margin-bottom: 10px;
+  }
+  .obri-app {
+    padding: 50px 0 20px;
+  }
+  .section-title.title-two br {
+    display: none;
+  }
+  .obri-testimonials {
+    padding-bottom: 30px;
+  }
+  .obri-support {
+    padding: 30px 0;
+  }
+  .obri-support .obri-icon img {
+    width: 300px;
+  }
+  .obri-download {
+    padding: 50px 0;
+    text-align: center;
+  }
+  .download-info {
+    padding-top: 30px;
+  }
+  .download-info .section-title.title-two {
+    text-align: center;
+  }
+  .download-info .section-title.title-two:after {
+    margin: 0 auto;
+  }
+  .download-info .section-title, .support-info .section-title, .subscribe-wrap .section-title {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .obri-download .obri-image img {
+    width: 250px;
+  }
+  .tab-content .obri-image img {
+    width: 280px;
+  }
+  .obri-subscribe {
+    padding: 50px 0;
+  }
+  .subscribe-wrap form {
+    padding-top: 10px;
+  }
+  .obri-contact {
+    padding: 35px 0;
+    text-align: center;
+  }
+  .obri-contact .obri-social {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .contact-wrap .obri-icon {
+    float: none;
+  }
+  .contact-info {
+    padding: 10px 0 0;
+  }
+  .contact-info ul li {
+    padding: 0 5px;
+  }
+  .obri-social a {
+    margin: 0 8px;
+  }
+  .obri-footer {
+    padding: 30px 0 15px;
+    text-align: center;
+  }
+  .obri-footer .textright {
+    padding-top: 10px;
+    text-align: center;
+  }
+  .obri-footer a {
+    margin: 0 10px 15px;
+  }
+  .work-item {
+    padding-bottom: 30px;
+  }
+  .obri-social span {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .container {
+    padding: 0 25px;
+  }
+  .obri-navigation {
+    width: auto;
+  }
+  .banner-caption h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .banner-caption p {
+    font-size: 16px;
+  }
+  .app-btn a {
+    display: inline-block;
+    margin: 0 5px 10px;
+  }
+  .banner-image {
+    padding-top: 30px;
+  }
+  .banner-image img {
+    width: 220px;
+  }
+  .about-wrap ul li {
+    float: none;
+    width: 100%;
+  }
+  .feature-item h2, .work-item h2 {
+    font-size: 22px;
+  }
+  .work-item .obri-icon {
+    width: 140px;
+    height: 140px;
+  }
+  .work-item .obri-icon img {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width:479px) {
+  .banner-caption h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .section-title, .app-info .section-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .nav-tabs .nav-link {
+    padding: 15px;
+    font-size: 12px;
+  }
+  .nav-tabs .nav-link .obri-icon {
+    width: 25px;
+    margin: 0 auto;
+  }
+  .subscribe-wrap .obri-btn {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width:359px) {
+  .nav-justified .nav-item {
+    flex: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .tab-content .obri-image {
+    padding-top: 30px;
+  }
+  .support-info ul {
+    font-size: 13px;
+  }
+  .contact-info ul li {
+    display: block;
+    padding: 5px 0;
+  }
+}
