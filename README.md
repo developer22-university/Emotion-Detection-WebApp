@@ -1,2 +1,9 @@
-# Emotion-Detection-WebApplogin  and lo
-BUILT USING OPENCV AND PYTHON3 DEPLOYED ON FLASK,IT is a we application for emotion detection giving user Signin and Signout features.
+# Emotion-detection-app
+This is a web app, deployed using flask .
+
+TECHNOLOGIES USED: PYTHON3,FLASK-WEB FRAMEWORK, HTML5 ,CSS3,BOOTSTRAP
+
+
+OPERATING SYSTEM: LINUX
+
+WORKED ON :JUPYTER LABS
